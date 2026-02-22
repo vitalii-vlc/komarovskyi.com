@@ -147,6 +147,36 @@ h2 {
 }
 #summary p:last-child { margin-bottom: 0; }
 
+/* ── About ───────────────────────────────────────────── */
+.about-box {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--accent);
+  border-radius: var(--radius);
+  padding: 24px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.about-tagline {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text);
+  line-height: 1.4;
+}
+
+.about-box p {
+  color: var(--text);
+  font-size: .95rem;
+}
+
+.about-location {
+  color: var(--muted);
+  font-size: .875rem !important;
+  margin-top: 4px;
+}
+
 /* ── Skills grid ─────────────────────────────────────── */
 .skills-grid {
   display: grid;
