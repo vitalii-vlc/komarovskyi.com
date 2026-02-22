@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vitalii Komarovskyi — Lead Software Engineer</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <div class="container header-inner">
+      <div class="header-identity">
+        <img src="photo.jpeg" alt="Vitalii Komarovskyi" class="avatar" />
+        <div>
+          <h1>Vitalii Komarovskyi</h1>
+          <p class="title">Lead Software Engineer</p>
+        </div>
+      </div>
+      <nav class="header-nav">
+        <a href="#summary">Summary</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <section class="contact-bar">
+      <span>📍 Valencia, Spain &middot; Ready to relocate</span>
+      <span><a href="tel:+34665533068">+34 66 55 33 068</a></span>
+      <span><a href="mailto:komarovskyi.v@gmail.com">komarovskyi.v@gmail.com</a></span>
+      <span><a href="https://linkedin.com/in/vitalii-komarovskyi" target="_blank" rel="noopener">LinkedIn</a></span>
+      <span class="lang-badge">🇺🇦 Ukrainian</span>
+      <span class="lang-badge">🇬🇧 English (Advanced)</span>
+      <span class="lang-badge">🇪🇸 Spanish (Elementary)</span>
+    </section>
+
+    <section id="summary">
+      <h2>Summary</h2>
+      <p>Lead Software Engineer with <strong>15+ years</strong> delivering scalable backend and cloud-native systems in Python.</p>
+      <p>Led a stream of 3 senior engineers: roadmap alignment, mentoring/onboarding, code reviews, task prioritization, and cross-team stakeholder coordination.</p>
+      <p>Built observability from zero to end-to-end coverage (Datadog + Terraform): 10+ dashboards, 10+ monitors; Python (FastAPI/Flask, asyncio), distributed systems, RFC/PoC-to-production, incident debugging.</p>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-group">
+          <h3>Lead</h3>
+          <p>Stream leadership, roadmap alignment, mentoring &amp; onboarding, code reviews, stakeholder communication, requirements gathering, technical decision-making (RFC/PoC), engineering standards.</p>
+        </div>
+        <div class="skill-group">
+          <h3>Backend</h3>
+          <p>Python (advanced), FastAPI / Flask / Django, asyncio, REST APIs, performance tuning, profiling &amp; debugging.</p>
+        </div>
+        <div class="skill-group">
+          <h3>AI</h3>
+          <p>LLM integration (OpenAI API), LangChain, LangGraph, RAG, pgvector, prompt engineering, evaluation &amp; observability (LangSmith).</p>
+        </div>
+        <div class="skill-group">
+          <h3>Distributed Systems</h3>
+          <p>Microservices, event-driven design, real-time ingestion pipelines, fault isolation, idempotency, retries/backpressure, scalability patterns.</p>
+        </div>
+        <div class="skill-group">
+          <h3>Infrastructure &amp; Data</h3>
+          <p>AWS (ECS, Lambda, S3), Azure (Durable Functions, API Management), Docker, Terraform, CI/CD, Datadog, PostgreSQL, ClickHouse, Redis, RabbitMQ, Kafka.</p>
+        </div>
+        <div class="skill-group">
+          <h3>Additional</h3>
+          <p>Neo4j (hands-on practice).</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+
+      <article class="job">
+        <div class="job-header">
+          <div>
+            <h3>AI &amp; LLM Research Project</h3>
+            <p class="job-sub">Personal Development / Self-Study</p>
+          </div>
+          <span class="job-meta">Sep 2025 – Present &middot; Remote</span>
+        </div>
+        <ul>
+          <li>Built an AI calendar assistant for natural-language scheduling and availability analysis across multiple calendars.</li>
+          <li>Implemented agentic workflows with LangGraph / LangChain and OpenAI APIs; added RAG + memory for contextual decisions.</li>
+          <li>Backend in Python (FastAPI) with PostgreSQL (+pgvector) and Redis; used LangSmith + a CLI harness for evaluation and rapid local testing.</li>
+          <li>Not deployed to production (learning project after a career break).</li>
+        </ul>
+        <p class="tech-stack"><strong>Tech Stack:</strong> Python, FastAPI, LangChain, LangGraph, LangSmith, OpenAI API, PostgreSQL (+pgvector), Redis, Docker, CI/CD, RAG.</p>
+      </article>
+
+      <article class="job">
+        <div class="job-header">
+          <div>
+            <h3>Crystal Intelligence <span class="dim">(Crypto Domain)</span></h3>
+            <p class="job-sub">Senior Software Engineer — Stream Lead</p>
+          </div>
+          <span class="job-meta">Dec 2021 – Aug 2025 &middot; Remote</span>
+        </div>
+        <ul>
+          <li>Led execution for a backend stream (team of 3 Senior Python developers), with roadmap planning aligned with the Core Lead; owned delivery via mentoring, code reviews, and prioritization.</li>
+          <li>Built observability from zero to end-to-end coverage using Datadog; delivered 10+ dashboards and 10+ monitors (infrastructure/host + applications + custom metrics + alerting), managed via Terraform (IaC).</li>
+          <li>Authored RFCs / PoCs and shipped platform upgrades: multi-instance + regional UserManagement for data residency, and migration from session auth to JWT to reduce coupling and enable scalability.</li>
+          <li>Delivered core "Monitor" capabilities (continuous wallet monitoring + configurable risk alerts) and investigator/compliance features (block list interactions report).</li>
+          <li>PostgreSQL at scale: migrated a ~20M-row table to a partitioned schema with planned user-facing impact under 5 minutes during business hours; implemented CSV export up to 1M rows via streaming + cursor-based queries with multiple sorting options.</li>
+          <li>Built real-time blockchain parsers for ADA/TRX/XRD; contributed to production ingestion using Kafka; for TRX/XRD designed a two-stage ingestion flow (buffering/staging table with raw data to normalization into standard schema).</li>
+        </ul>
+        <p class="tech-stack"><strong>Tech Stack:</strong> Python, Flask, PostgreSQL, ClickHouse, Redis, RabbitMQ, Kafka, Docker, AWS (ECS, S3, Lambda), Datadog, Terraform, GitHub CI/CD, asyncio.</p>
+      </article>
+
+      <article class="job">
+        <div class="job-header">
+          <div>
+            <h3>EPAM Systems <span class="dim">(Insurtech)</span></h3>
+            <p class="job-sub">Senior Python Developer — Feature Owner</p>
+          </div>
+          <span class="job-meta">Sep 2020 – Dec 2021 &middot; Kyiv, Ukraine</span>
+        </div>
+        <ul>
+          <li>Owned a core feature (D&amp;F bot) on Azure Durable Functions, accountable for delivery and ongoing improvements.</li>
+          <li>Led execution with 1 Intermediate developer: mentored on domain + stack, ran code reviews, and prioritized/assigned tasks.</li>
+          <li>Migrated core business logic to Azure (Durable Functions, API Gateways/serverless workflows) to modernize architecture and improve scalability.</li>
+          <li>Led end-to-end data migration from MySQL to MS SQL Server, ensuring data integrity, query optimization, and minimal downtime.</li>
+        </ul>
+        <p class="tech-stack"><strong>Tech Stack:</strong> Python, Azure Durable Functions, Azure API Management, MS SQL Server, MySQL, Docker, CI/CD, Git.</p>
+      </article>
+
+      <article class="job">
+        <div class="job-header">
+          <div>
+            <h3>Python Developer → Lead Software Engineer</h3>
+            <p class="job-sub">ArtDriver, ICM Consulting, MMU Business School, DataArt, SoftServe, Diceus, Freelance, Wedding Spot Inc.</p>
+          </div>
+          <span class="job-meta">2010 – 2020</span>
+        </div>
+        <ul>
+          <li>Designed, developed, and maintained backend systems using Python, Django, and Flask for clients across web, education, and enterprise domains.</li>
+          <li>Architected scalable backend solutions and RESTful APIs, improving performance, reliability, and developer productivity.</li>
+          <li>Delivered end-to-end backend projects as a freelancer, managing requirements, design, development, and deployment independently.</li>
+          <li>Optimized production systems at Wedding Spot, Inc., improving response times, reducing downtime, and ensuring code quality and maintainability.</li>
+          <li>Mentored junior developers and contributed to establishing best practices for code review, testing, and CI/CD pipelines.</li>
+        </ul>
+        <p class="tech-stack"><strong>Tech Stack:</strong> Python, Django, Flask, asyncio/TornadoWeb, Celery, PostgreSQL, MySQL, MongoDB, Redis, REST APIs, Docker, CI/CD, Git, Agile/Scrum, TypeScript/JavaScript/ReactJS.</p>
+      </article>
+
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>Vitalii Komarovskyi &middot; <a href="mailto:komarovskyi.v@gmail.com">komarovskyi.v@gmail.com</a></p>
+    </div>
+  </footer>
+
+</body>
+</html>
